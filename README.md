@@ -8,9 +8,13 @@ Installation
 Install the plugin with npm:
 
 ```shell
-$ npm install koa-video --save-dve
+$ npm install koa-video --save
 ```
+or use yarn:
 
+```shell
+$ yarn add koa-video -S
+```
 
 Options
 ---------------------
@@ -23,6 +27,8 @@ Example
 ```javasrcipt
 const Koa = require('koa');
 const app = new Koa();
+const koaVideo = require('koa-video');
+
 app.use(koaVideo({
         extMatch: /\.mp[3-4]$/i
     }))
